@@ -85,7 +85,7 @@ This shows a significant improvement over individual models.
 Run the complete project using the Colab notebook:
 
 🔗 **Colab Link:**  
-https://share.google/MN7mkthwA3OTA2RIL
+[https://share.google/MN7mkthwA3OTA2RIL](https://colab.research.google.com/drive/1PNfNyuj71rd45G874BfgWG3XKYy9kEeb)
 
 ---
 
