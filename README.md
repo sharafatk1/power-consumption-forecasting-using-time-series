@@ -1,130 +1,323 @@
-# ⚡ Hourly Power Consumption Forecasting for Smart Home using Time Series Models
+<div align="center">
 
-## 📌 Project Overview
-This project focuses on forecasting hourly electricity consumption using advanced **time series and machine learning models**. The objective is to accurately predict power demand patterns to support smart home energy management and intelligent grid systems.
+# ⚡ Power Consumption Forecasting Using Time-Series Models
 
-The study performs a comparative analysis of multiple forecasting models and proposes a **Hybrid LSTM + GBM model**, which achieves the best performance.
+### AI-powered Hourly Electricity Load Forecasting using Deep Learning, Machine Learning & Hybrid Models
 
----
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)]()
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange?logo=tensorflow)]()
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)]()
+[![XGBoost](https://img.shields.io/badge/XGBoost-GradientBoosting-green)]()
+[![Pandas](https://img.shields.io/badge/Pandas-DataAnalysis-blue?logo=pandas)]()
+[![NumPy](https://img.shields.io/badge/NumPy-ScientificComputing-blue?logo=numpy)]()
 
-## 👨‍💻 Team Members
-- Sharafathusein Kothariya  
-- Shubhra Gupta  
-- Anuska Singh  
+Predicting hourly electricity demand using Machine Learning, Deep Learning, and Hybrid Time-Series Forecasting Models on real-world NYISO electricity load data.
 
----
-
-## 📊 Dataset
-This project uses the **NYISO (New York Independent System Operator) Hourly Electricity Load Dataset**.
-
-🔗 Dataset Link:  
-https://www.nyiso.com/load-data
-
-> The dataset contains hourly electricity demand data across multiple zones and is widely used for energy forecasting research. :contentReference[oaicite:0]{index=0}
+</div>
 
 ---
 
-## 🚀 Models Implemented
-The following models were implemented and compared:
+# 📌 Project Overview
 
-- Long Short-Term Memory (LSTM)
-- Gated Recurrent Unit (GRU)
+Accurate electricity demand forecasting is essential for smart grids, energy management, and demand-response systems.
+
+This project presents a comparative analysis of multiple forecasting models using hourly electricity consumption data obtained from the **New York Independent System Operator (NYISO)**.
+
+Five forecasting models were developed and evaluated:
+
+- 🔹 Long Short-Term Memory (LSTM)
+- 🔹 Gated Recurrent Unit (GRU)
+- 🔹 Random Forest
+- 🔹 Gradient Boosting Machine (GBM)
+- 🔹 Hybrid LSTM + GBM
+
+The objective was to identify the model that provides the highest forecasting accuracy while maintaining strong generalization performance.
+
+---
+
+# 🚀 Features
+
+✅ Real-world NYISO hourly electricity dataset
+
+✅ Multi-year historical data (2021–2026)
+
+✅ Complete preprocessing pipeline
+
+✅ Feature Engineering
+
+- Lag Features
+- Rolling Statistics
+- Calendar Features
+- Time-based Features
+
+✅ Deep Learning Models
+
+- LSTM
+- GRU
+
+✅ Machine Learning Models
+
+- Random Forest
 - Gradient Boosting Machine (GBM)
-- Random Forest (RF)
-- 🔥 Hybrid LSTM + GBM (Proposed Model)
+
+✅ Hybrid Forecasting Architecture
+
+LSTM + GBM
+
+✅ Model Evaluation
+
+- RMSE
+- MAE
+- MAPE
+- R² Score
 
 ---
 
-## 🧠 Methodology
-The project follows a complete data science pipeline:
+# 🏗 Project Architecture
 
-1. Data Collection (NYISO dataset)
-2. Data Preprocessing
-   - Missing value handling
-   - Outlier detection
-   - Timestamp processing
-3. Feature Engineering
-   - Lag features (1h, 24h, 168h, etc.)
-   - Rolling statistics
-   - Temporal features
-4. Model Training
-5. Evaluation using:
-   - RMSE
-   - MAE
-   - MAPE
-   - R²
+```
 
----
+NYISO Dataset
+│
+▼
 
-## 📈 Results
-The **Hybrid LSTM + GBM model** achieved the best performance:
+Data Preprocessing
 
-- RMSE: 52.50 MW  
-- MAE: 35.43 MW  
-- MAPE: 0.60%  
-- R²: 0.9979 :contentReference[oaicite:1]{index=1}  
+│
 
-This shows a significant improvement over individual models.
+├── Missing Value Handling
 
----
+├── Duplicate Removal
 
-## 🛠️ Technologies Used
-- Python 3
-- TensorFlow / Keras
-- Scikit-learn
-- XGBoost
-- Pandas, NumPy
-- Matplotlib
-- Google Colab (GPU)
+├── Outlier Detection
 
----
+├── Feature Engineering
 
-## ▶️ How to Run the Project
+└── Data Normalization
 
-### 📌 Google Colab Implementation
-Run the complete project using the Colab notebook:
+│
+▼
 
-🔗 **Colab Link:**  
-[https://share.google/MN7mkthwA3OTA2RIL](https://colab.research.google.com/drive/1PNfNyuj71rd45G874BfgWG3XKYy9kEeb)
+Model Training
 
----
+│
 
-### ⚙️ Steps to Run
-1. Open the Colab link above  
-2. Upload or access dataset from NYISO  
-3. Run all cells sequentially  
-4. View model training and results  
+├── GRU
+
+├── LSTM
+
+├── Random Forest
+
+├── GBM
+
+└── Hybrid LSTM + GBM
+
+│
+▼
+
+Performance Evaluation
+
+│
+
+├── RMSE
+
+├── MAE
+
+├── MAPE
+
+└── R² Score
+
+```
 
 ---
 
-## 📑 Documentation
-- 📄 Research Paper: Included in repository  
-- 📄 Project Report: Included in repository  
+# 📂 Repository Structure
+
+```
+
+Power-Consumption-Forecasting/
+
+│
+
+├── data/
+
+│ ├── NYISO CSV Files
+
+│ └── README.md
+
+│
+
+├── notebooks/
+
+│ └── power_consumption_forecasting.ipynb
+
+│
+
+├── reports/
+
+│ ├── Research_Paper.pdf
+
+│ ├── Final_Report.pdf
+
+│ └── Presentation.pptx
+
+│
+
+├── results/
+
+│ ├── lstm_prediction.png
+
+│ ├── gru_prediction.png
+
+│ ├── gbm_prediction.png
+
+│ ├── rf_prediction.png
+
+│ └── hybrid_prediction.png
+
+│
+
+├── requirements.txt
+
+└── README.md
+
+```
 
 ---
 
-## 📌 Key Contribution
-The main contribution of this project is the **Hybrid LSTM + GBM model**, which combines:
-- LSTM → Temporal pattern learning  
-- GBM → Residual error correction  
+# 📊 Dataset
 
-This significantly improves forecasting accuracy.
+**Source**
 
----
+New York Independent System Operator (NYISO)
 
-## 🔮 Future Scope
-- Real-time deployment in smart homes  
-- Integration with IoT devices  
-- Inclusion of weather data  
-- Cloud-based energy prediction systems  
+Dataset consists of:
+
+- Hourly Electricity Load
+- Multiple Load Zones
+- Historical Grid Demand
+- Multi-year Time-Series Data (2021–2026)
 
 ---
 
-## 📚 References
-- NYISO Dataset (Official Website)
-- Research Paper (Included in repository) :contentReference[oaicite:2]{index=2}  
+# ⚙ Data Preprocessing
+
+The preprocessing pipeline includes:
+
+- Missing Value Imputation
+- Duplicate Timestamp Handling
+- Rolling Z-Score Outlier Detection
+- Datetime Conversion
+- Feature Engineering
+- Lag Feature Generation
+- Rolling Mean & Standard Deviation
+- Min-Max Scaling
+- Chronological Train/Test Split
 
 ---
 
-## ⭐ Conclusion
-This project demonstrates that hybrid models outperform standalone approaches in time series forecasting and can be effectively used for **smart energy management systems**.
+# 🤖 Models Implemented
+
+| Model | Type |
+|---------|------------|
+| GRU | Deep Learning |
+| LSTM | Deep Learning |
+| Random Forest | Machine Learning |
+| GBM | Gradient Boosting |
+| Hybrid LSTM + GBM | Hybrid Model |
+
+---
+
+# 📈 Performance Comparison
+
+| Model | RMSE | MAE | MAPE | R² |
+|------|------|------|------|------|
+| GRU | 87.98 | 63.85 | 1.1024 | 0.9941 |
+| LSTM | 78.34 | 58.22 | 1.0264 | 0.9954 |
+| Random Forest | 72.94 | 51.04 | 8.8658 | 0.9960 |
+| GBM | 62.70 | 43.97 | 0.7506 | 0.9954 |
+| ⭐ Hybrid LSTM + GBM | **52.50** | **35.43** | **0.6043** | **0.9979** |
+
+---
+
+# 🏆 Best Performing Model
+
+🏅 **Hybrid LSTM + GBM**
+
+Performance Highlights
+
+- RMSE: **52.50 MW**
+- MAE: **35.43 MW**
+- MAPE: **0.6043%**
+- R² Score: **0.9979**
+
+The Hybrid model achieved the highest forecasting accuracy by combining the temporal learning capability of LSTM with the residual error correction capability of Gradient Boosting Machine.
+
+---
+
+# 📷 Results
+
+Predicted electricity load closely follows the actual demand across all seasons.
+
+The repository includes prediction graphs for:
+
+- GRU
+- LSTM
+- Random Forest
+- GBM
+- Hybrid LSTM + GBM
+
+inside the **results/** folder.
+
+---
+
+# 💡 Applications
+
+- Smart Grid Systems
+- Load Forecasting
+- Energy Management
+- Demand Response
+- Utility Planning
+- Renewable Energy Integration
+- AI-driven Energy Analytics
+
+---
+
+# 🔮 Future Work
+
+- Transformer-based Time-Series Models
+- Temporal Fusion Transformer (TFT)
+- Informer
+- Autoformer
+- Weather-aware Forecasting
+- Multi-region Forecasting
+- Real-time Deployment on AWS
+- IoT-based Smart Energy Monitoring
+
+---
+
+# 📚 Research Paper
+
+This project is accompanied by an IEEE-style research paper documenting the methodology, experiments, and comparative analysis.
+
+📄 **Research Paper**
+
+`reports/Research_Paper.pdf`
+
+---
+
+# 👨‍💻 Author
+
+**Sharafat Kothariya**
+
+Computer Engineering Student
+
+AI/ML • Deep Learning • Computer Vision • AWS Cloud
+
+LinkedIn: https://www.linkedin.com/in/sharafatk1/
+
+GitHub: https://github.com/sharafatk1
+
+---
+
+⭐ If you found this project interesting, consider giving it a Star!
